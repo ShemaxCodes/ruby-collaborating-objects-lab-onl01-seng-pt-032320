@@ -9,7 +9,7 @@ def initialize(path)
 end 
   
   def files 
-    @files = Dir.entries(@path).select {|f| !File.directory? f}
+    @files = Dir.entries(@path).select {|song| !File.directory? f}
   end 
   
   
