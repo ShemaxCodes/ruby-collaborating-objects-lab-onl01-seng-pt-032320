@@ -13,8 +13,8 @@ end
   end 
   
   
-  def import 
-    
-  end 
+  def import
+    files.each {|song| Song.new_by_filename(song)}
+  end
   
 end 
